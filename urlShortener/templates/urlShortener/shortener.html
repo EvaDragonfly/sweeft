@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>Shortener Page</h1>
+<div class=" ">
+  <form class="form-group" action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" name="create" value="Create">
+
+  </form>
+</div>
+{% endblock %}
